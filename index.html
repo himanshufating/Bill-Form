@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment From</h1>
+        <h3>User Information</h3>
+        <p>
+            Name: * <input type="text" name ="name" id="Name"/>
+        </p>
+        <p>
+            <fieldset>
+                <legend> Gender : :</legend>
+                Male: <input type="radio" name="gender" value="male" id="Male"/>
+                Female:<input type="radio" name="gender" value="Female" id="Female"/><br>
+            </fieldset>
+        </p>     
+        <p>
+            Address:*<br>
+            <textarea name="address" cols="20" rows="5" id="Address"></textarea><br>
+        </p>
+        <p>   
+            Email:<br>
+            <input type="email" name="mail" id="Email" placeholder="Himanshu@gmail.com"/><br>
+        </p>
+        <p>  Pincode:*<br>
+            <input type="number" name="pincode" placeholder="123456" id="Pincode"/></p><br>
+            
+            <h3>Payment Information</h3>
+            Card Type:<br>
+            <select name="Select "> <b>aria-placeholder="-Select Card Type"</b>
+                
+                <option value="debit">Debit Card</option>
+                <option value="crdit">Credit card</option>
+                <option value="rupay">RuPay Debit card</option>
+                <option value="mastercard">Mastercard</option>   
+            </select><br>
+            Expiration Date:<br>
+            <input type="date" id="Date"/><br>
+            CVV:<br>
+            <input type="text" placeholder="123" id="Cvv"/><br>
+            <button onclick="Pay()">Pay Now</button>
+        </div>
+        <fieldset>
+            <legend>Your Details</legend>
+            <span id="msg"></span>
+        </fieldset>
+        <script src="script.js"></script>
+    
+</body>
+</html>
